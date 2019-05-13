@@ -30,13 +30,29 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+.forEach() executes a provided function once for each array element. While .map() creates a new array with the results of calling a provided function on every element in the calling array. The difference is forEach() affects and changes our original Array, whereas map() returns an entirely new Array  of the same size.  Thus leaving the original array unchanged.
+
 2. What is the difference between a function and a method?
+
+A method is associated with an object while a function is independent. Methods are functions that belong to a class, functions can be on any other scope of the code so you could state that all methods are functions, but not all functions are methods.
 
 3. What is closure?
 
+Closure is a feature in JavaScript where an inner function has access to the outer (enclosing) function’s variables . Closure has 3 scope chains : it has access to its own scope  which are variables defined between its curly brackets, it has access to the outer function’s variables, it has access to the global variables.
+
 4. Describe the four rules of the 'this' keyword.
 
+-Window/Global Binding: When in the global scope the 'this' keyword will be referring to the window/console object.
+
+-Implicit Binding: Whenever a function is called by a preceding dot, the object before that dot is the object that the 'this' keyword is pointing to.
+
+-New Binding: Whenever a constructor function is used, the keyword 'this' refers to the specific instance of the object that is created and returned by the constructor function.
+
+-Explicit Binding: Whenever JavaScript’s call or apply method is used, the keyword 'this' is explicitly defined. Using .call and .apply changes the context of the 'this' keyword in a constructor object in order to override what it points to.
+
 5. Why do we need super() in an extended class?
+
+The super keyword is used to access and call functions on an object's parent. 
 
 ## Project Set up
 
